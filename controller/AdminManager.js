@@ -1,17 +1,17 @@
 "use strict";
 exports.__esModule = true;
-exports.UserManager = void 0;
+exports.AdminManager = void 0;
 var User_1 = require("../model/User");
 var AdminManager = /** @class */ (function () {
-    function UserManager() {
+    function AdminManager() {
         this.userList = [];
         this.userList.push(new User_1.User('hung.beo', '123', 0));
         this.userList.push(new User_1.User('vit.hung', '123', 0));
     }
-    UserManager.prototype.register = function (username, password) {
+    AdminManager.prototype.register = function (username, password) {
         this.userList.push(new User_1.User(username, password, 1));
     };
-    UserManager.prototype.login = function (username, password) {
+    AdminManager.prototype.login = function (username, password) {
         var index = -1;
         this.userList.map(function (user) {
             if (user.getUsername() === username && user.getPassword() === password) {
@@ -21,6 +21,6 @@ var AdminManager = /** @class */ (function () {
         });
         return index;
     };
-    return UserManager;
+    return AdminManager;
 }());
-exports.UserManager = AdminManager;
+exports.AdminManager = AdminManager;

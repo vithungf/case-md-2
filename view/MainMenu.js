@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 exports.MainMenu = void 0;
-var UserManager_1 = require("../controller/UserManager");
+var AdminManager_1 = require("../controller/AdminManager");
 var AdminMenu_1 = require("./AdminMenu");
 var UserMenu_1 = require("./UserMenu");
 var readlineSync = require('readline-sync');
@@ -9,7 +9,7 @@ var MainMenu = /** @class */ (function () {
     function MainMenu() {
         this.adminMenu = new AdminMenu_1.AdminMenu();
         this.userMenu = new UserMenu_1.UserMenu();
-        this.userManager = new UserManager_1.UserManager();
+        this.userManager = new AdminManager_1.AdminManager();
         this.menu = "\n    1.login    \n    2.register\n    3.exit";
     }
     MainMenu.prototype.selection = function () {
