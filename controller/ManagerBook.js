@@ -17,7 +17,7 @@ var ManagerBook = /** @class */ (function () {
     ManagerBook.prototype["delete"] = function (id) {
         var index = this.findById(id);
         if (index == -1) {
-            return "No exist in the menu";
+            return "ko tồn tại";
         }
         ManagerBook.listBook.splice(index, 1);
     };

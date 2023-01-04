@@ -23,7 +23,7 @@ export class ManagerBook implements ManagerInterface {
     delete(id: any) {
         let index = this.findById(id);
         if (index == -1) {
-            return "No exist in the menu";
+            return "ko tồn tại";
         }
         ManagerBook.listBook.splice(index, 1);
     }
@@ -53,7 +53,7 @@ export class ManagerBook implements ManagerInterface {
     deleteName(name: string) {
         let index = this.findByName(name);
         if (index == -1) {
-            return "No exist in the menu";
+            return "No exist in the list";
         }
         ManagerBook.listBook.splice(index, 1);
     }

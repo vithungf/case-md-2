@@ -7,7 +7,7 @@ export  class Book{
     private returnDay: Date | string
 
 
-    constructor(id : number, name : string,price: number, borrowDay: string){
+    constructor(id : number, name : string,price: number, borrowDay?: string){
         this._id = id;
         this._name = name;
         this._price = price;

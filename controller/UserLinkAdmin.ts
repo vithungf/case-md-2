@@ -1,22 +1,22 @@
 import {ManagerBook} from "./ManagerBook";
 
 const readlineSync = require('readline-sync');
-export class UserManager{
+export class UserLinkAdmin {
     userManager=[];
-    order(id:number){
+    add(id:number){
         for(let i=0;i<ManagerBook.listBook.length;i++){
             if(ManagerBook.listBook[i].getId()==id){
                 this.userManager.push(ManagerBook.listBook[i])
             }
         }
     }
-    showListOrder(){
+    showAll(){
         return this.userManager;
     }
-    deleteOrder(name:string){
+    delete(name:string){
         let index=this.findByName(name);
         if(index== -1){
-            console.log("No food name!");
+            console.log("No book name!");
         }else{
             this.userManager.splice(index,1)
         }

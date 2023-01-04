@@ -1,4 +1,4 @@
-import {AdminManager} from "../controller/AdminManager";
+import {AccountAdmin} from "../controller/AccountAdmin";
 import {AdminMenu} from "./AdminMenu";
 import {UserMenu} from "./UserMenu";
 
@@ -8,7 +8,7 @@ export class MainMenu{
     private adminMenu: AdminMenu = new AdminMenu();
     private userMenu: UserMenu = new UserMenu();
 
-    private userManager : AdminManager = new AdminManager();
+    private userManager : AccountAdmin = new AccountAdmin();
     private menu : string =`
     1.login    
     2.register

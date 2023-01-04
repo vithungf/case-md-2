@@ -7,7 +7,7 @@ var readlineSync = require('readline-sync');
 var UserMenu = /** @class */ (function () {
     function UserMenu() {
         this.manager = new ManagerBook_1.ManagerBook();
-        this.Userlist = "\u0110\u00E2y l\u00E0 User \n                    1.add book\n                    2.Watch the list\n                    3.Delete book\n                    4.Payment\n                    5.Exist";
+        this.Userlist = "\u0110\u00E2y l\u00E0 User \n                    1.add book\n                    2.Watch the list\n                    3.Delete book\n                    4.Payment\n                    5.Exit";
     }
     UserMenu.prototype.selection = function () {
         while (true) {

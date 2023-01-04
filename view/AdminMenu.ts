@@ -10,7 +10,7 @@ export class AdminMenu {
         2.show list book
         3.update
         4.delete
-        5.exist`;
+        5.exit`;
 
     selection() {
         while (true) {

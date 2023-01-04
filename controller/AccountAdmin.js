@@ -2,7 +2,7 @@
 exports.__esModule = true;
 exports.AdminManager = void 0;
 var User_1 = require("../model/User");
-var AdminManager = /** @class */ (function () {
+var AccountAdmin = /** @class */ (function () {
     function AdminManager() {
         this.userList = [];
         this.userList.push(new User_1.User('hung.beo', '123', 0));
@@ -23,4 +23,4 @@ var AdminManager = /** @class */ (function () {
     };
     return AdminManager;
 }());
-exports.AdminManager = AdminManager;
+exports.AdminManager = AccountAdmin;

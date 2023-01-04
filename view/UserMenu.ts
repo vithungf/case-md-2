@@ -10,7 +10,7 @@ export class UserMenu{
                     2.Watch the list
                     3.Delete book
                     4.Payment
-                    5.Exist`;
+                    5.Exit`;
 
     selection() {
         while (true) {

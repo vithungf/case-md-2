@@ -1,6 +1,6 @@
 import {User} from '../model/User';
 
-export class AdminManager {
+export class AccountAdmin {
     private userList: User[]=[];
     constructor( ){
         this.userList.push( new User('hung.beo','123',0))
